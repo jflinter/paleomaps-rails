@@ -1,8 +1,8 @@
-.navbar.navbar-fixed-top
+.navbar.navbar-static-top
 	.navbar-inner
 		.container
 			.brand PaleoMaps
 .container
 	.row
-		.span8#map
+		.span8#map{:data => {:latitude => @latitude, :longitude => @longitude }} Loading...
 		.span4#place

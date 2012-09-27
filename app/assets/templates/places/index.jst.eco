@@ -1,0 +1,6 @@
+<h1>Places</h1>
+<ul>
+<% for place in @places.models: %>
+<li><%= place.get('name') %></li>
+<% end %>
+</ul>

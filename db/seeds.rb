@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+c = Chain.create(name: 'Whole Foods')
+Place.create(chain: c, street_address: '2201 Wilshire Boulevard, Santa Monica, CA')
+Place.create(chain: c, street_address: '500 Wilshire Boulevard, Santa Monica, CA')

@@ -1,7 +1,8 @@
 Paleomaps::Application.routes.draw do
-
-  resources :places, :only => [:create, :show, :index] do
-    resources :menu_items, :only => [:create]
+  scope 'api' do
+    resources :places, :only => [:create, :show, :index] do
+      resources :menu_items, :only => [:create]
+    end
   end
 
   root :to => 'home#index'
