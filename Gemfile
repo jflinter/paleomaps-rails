@@ -20,6 +20,7 @@ group :assets do
   gem 'jquery-rails'
 end
 
+gem 'backbone-on-rails'
 
 gem 'mongoid', '>=3.0.3'
 gem 'haml-rails'
