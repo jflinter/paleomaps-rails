@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-PaleomapsRails::Application.load_tasks
+Paleomaps::Application.load_tasks
