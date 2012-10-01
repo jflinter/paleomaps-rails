@@ -1,0 +1,3 @@
+<h2>Add a place to the map!</h2>
+<input type='text' id='places-autocomplete' class='span4'/>
+<input type='submit' id='new-place-button' class='btn btn-success' />

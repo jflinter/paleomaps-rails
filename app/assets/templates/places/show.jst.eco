@@ -1,0 +1,2 @@
+<%= @place.get('name') %>
+<%= @place.get('street_address') %>

@@ -3,7 +3,9 @@ window.Paleomaps =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> alert 'Hello from Backbone!'
+  init: ->
+  	Paleomaps.router = new Paleomaps.Routers.Places()
+  	Backbone.history.start(pushState: true)
 
 $(document).ready ->
   Paleomaps.init()

@@ -11,10 +11,27 @@ class Place
   	chain.menu_items
   end
   
+  def latitude
+    coordinates[1]
+  end
+  def latitude=(lat)
+    coordinates ||= []
+    coordinates[1] = lat
+  end
+  def longitude
+    coordinates[0]
+  end
+  def longitude=(lon)
+    coordinates ||= []
+    coordinates[0] = lon
+  end
+
+
   field :street_address, type: String
   field :coordinates, type: Array
   belongs_to :chain, :inverse_of => :places
   validates_presence_of :coordinates, :chain
+  validates_uniqueness_of :street_address
 
   def address
   	"#{chain_name}, #{street_address}"
@@ -22,7 +39,7 @@ class Place
 
   include Geocoder::Model::Mongoid
 
-  geocoded_by :address
+  geocoded_by :street_address
   reverse_geocoded_by :coordinates, :address => :street_address
   before_validation :setup_geocoding
 

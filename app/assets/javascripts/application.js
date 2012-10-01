@@ -16,6 +16,7 @@
 //= require underscore
 //= require backbone
 //= require paleomaps
+//= require map
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections

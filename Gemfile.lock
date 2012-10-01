@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/alexreisner/geocoder.git
-  revision: 12444f7f3d9bd90d764a240ccc893c5a58946024
+  revision: c6698ec90629bafae3929d2bec11885c14c0382b
   specs:
-    geocoder (1.1.3)
+    geocoder (1.1.4)
 
 GEM
   remote: https://rubygems.org/
