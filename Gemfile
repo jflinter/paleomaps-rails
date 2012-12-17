@@ -18,6 +18,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-rails'
+  gem 'haml_coffee_assets'
 end
 
 gem 'backbone-on-rails'

@@ -22,3 +22,4 @@ class Paleomaps.Views.PlacesNew extends Backbone.View
 			street_address: place.formatted_address
 			latitude: place.geometry.location.Xa
 			longitude: place.geometry.location.Ya
+		
